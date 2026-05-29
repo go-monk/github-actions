@@ -17,6 +17,7 @@ jobs:
         os: [ ubuntu-latest, macos-latest, windows-latest ]
     runs-on: ${{ matrix.os }}
     steps:
+      # It's idiomatic to not use name for a common action.
       - uses: actions/checkout@v6
       - name: install go
         uses: actions/setup-go@v6
