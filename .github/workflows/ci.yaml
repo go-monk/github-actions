@@ -20,6 +20,9 @@ jobs:
     steps:
       # It's idiomatic to not use name for a common action.
       - uses: actions/checkout@v6
+        with:
+          # required for the changelog to work correctly
+          fetch-depth: 0
       - name: install go
         uses: actions/setup-go@v6
         with:
