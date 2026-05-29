@@ -6,3 +6,10 @@ GitHub actions
 Workflow
 - automation file in YAML
 - lives at `.github/workflows`
+
+Creating a release
+
+```
+$ git tag v0.0.1
+$ git push origin v0.0.1 
+```
